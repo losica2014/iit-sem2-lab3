@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Войти</title>
+        <link rel="stylesheet" href="{{STATIC_URL}}/static/css/style.css">
+    </head>
+    <body>
+        <div class="content">
+            <h1>Войти</h1>
+            <form method="POST">
+                {% csrf_token %}
+                <input type="text" name="username" placeholder="Имя пользователя" value="{{ form.username }}">
+                <input type="password" name="password" placeholder="Пароль" value="{{ form.password }}">
+                <input type="submit" value="Войти">
+            </form>
+            <p class="error">{{ form.errors }}</p>
+            <p>Ещё не зарегистрированы? <a href="/auth/register">Зарегистрироваться</a></p>
+        </div>
+    </body>
+</html>
