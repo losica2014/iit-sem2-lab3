@@ -40,4 +40,22 @@ body {
     text-align: right;
     font-style: italic;
 }
-    
+
+.content {
+    width: 960px;
+    margin: auto;
+}
+
+form > * {
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+}
+
+textarea {
+    height: 200px;
+}
+
+.error {
+    color: red;
+}
