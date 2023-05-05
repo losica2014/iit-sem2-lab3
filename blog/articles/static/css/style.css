@@ -63,3 +63,12 @@ textarea {
 .header a {
     padding: 4px;
 }
+
+.fold-button {
+    display: block;
+    text-align: right;
+}
+
+.folded .article-info {
+    display: none;
+}
